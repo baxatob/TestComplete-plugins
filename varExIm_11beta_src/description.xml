@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScriptExtensionGroup Name = "My Extensions">
+  <Category Name = "Export/Import Tools">
+
+    <ScriptExtension Name = "Export/Import Project Variables " Author = "Yury Vakhatov" Version = "1.1 beta" HomePage = "smartbear.com">
+      <Script Name = "clcCode.js">
+		<DesignTimeAction Name="Export variables to file" Icon="export.bmp" Routine="export_variables"/>
+		<DesignTimeAction Name="Import variables from file" Icon="import.bmp" Routine="import_variables"/>
+      </Script>
+      <Description>
+        Provides support for import and export project variables from/to the file.
+      </Description>
+    </ScriptExtension>
+
+  </Category>
+</ScriptExtensionGroup>
