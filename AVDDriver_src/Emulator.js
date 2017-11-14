@@ -37,7 +37,12 @@ function runEmulator(avdName) {
 
 
 function stopEmulator() {
-	Sys.Process("qemu-system-*").Terminate()
+	var count = 0;
+	while (Sys.WaitProcess("qemu-system-*", 3000).Exists) {
+		count++;
+		Sys.Process("qemu-system-*").Terminate();
+		Log.Message("Emulator process # " + count + " terminated");
+	}
 }
     
 
