@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScriptExtensionGroup Name="">
+    <Category Name="Mobile Tools">
+        <ScriptExtension Name="Android Virtual Device Driver" Author="Yury Vakhatov" Version="1.2b" HomePage="">
+            <Script Name="Emulator.js" InitRoutine="" FinalRoutine="">
+
+                <RuntimeObject Name="AVD_Driver" Namespace="">
+                    <Method Name="runEmulator" Routine="runEmulator">Will run AVD given by its name</Method>
+					<Method Name="getAvdList" Routine="getAvdList">Will post to the Log the list of all available AVDs</Method>
+					<Method Name="stopEmulator" Routine="stopEmulator">Will terminate running AVD processes</Method>
+                    <Property Name="" GetRoutine="" SetRoutine="">Property description</Property>
+                    <Description>Android Virtual Device Driver</Description>
+                </RuntimeObject>
+                
+            </Script>
+            <Description>Provides support for Android Virtual Devices (AVD)</Description>
+        </ScriptExtension>
+    </Category>
+</ScriptExtensionGroup>
