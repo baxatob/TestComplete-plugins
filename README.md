@@ -10,6 +10,6 @@ It should be placed in TestComplete_installation_directory\Bin\Extensions\Script
 *pluginName_src* folder contains plugin source code and service files. You don't need to download it, however you may be interested in how-it-works.
 #
 
-__varExIm_11beta__ - provides support for import and export project variables from/to the external file.
+__varExIm_11beta__ - provides support for import and export project variables from/to the external file. Based on the simple GUI.
 
-__AVDDriver__ - provides support for Android Virtual Devices (AVD).
+__AVDDriver__ - provides support for Android Virtual Devices (AVD). Based on the Runtime object.
