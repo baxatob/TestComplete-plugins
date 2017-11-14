@@ -10,8 +10,8 @@ function include(arr, obj) {
 
 
 function runEmulator(avdName) {
-	var emulator = "%LOCALAPPDATA%\\Android\\Sdk\\emulator\\emulator";
-	var oShell = Sys.OleObject("WScript.Shell");
+    var emulator = "%LOCALAPPDATA%\\Android\\Sdk\\emulator\\emulator";
+    var oShell = Sys.OleObject("WScript.Shell");
     var avdList = getAvdList();
     if (!include(avdList, avdName)) {
         Log.Error("Given AVD is not in the list", 
@@ -42,8 +42,8 @@ function stopEmulator() {
     
 
 function getAvdList() {
-	var emulator = "%LOCALAPPDATA%\\Android\\Sdk\\emulator\\emulator";
-	var oShell = Sys.OleObject("WScript.Shell");
+    var emulator = "%LOCALAPPDATA%\\Android\\Sdk\\emulator\\emulator";
+    var oShell = Sys.OleObject("WScript.Shell");
     var command = emulator + " -list-avds";
     var oExec = oShell.Exec(command);   
     oExec.StdIn.Close();
