@@ -11,3 +11,5 @@ It should be placed in TestComplete_installation_directory\Bin\Extensions\Script
 #
 
 __varExIm_11beta__ - provides support for import and export project variables from/to the external file.
+
+__AVDDriver__ - provides support for Android Virtual Devices (AVD).
